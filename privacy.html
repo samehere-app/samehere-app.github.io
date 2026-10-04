@@ -80,9 +80,9 @@
 
         <h2>3. 백업</h2>
         <p>
-          장애에 대비해 데이터베이스를 하루 한 번 암호화해 백업하고 30일 동안 보관합니다. 그래서
-          삭제된 글도 최대 30일 동안 암호화된 백업 안에 남아 있을 수 있으며, 백업은 복구 목적 외에는
-          열지 않습니다.
+          정기 백업은 하지 않습니다. 서버 구조를 바꾸기 직전에만 운영자가 일시적인 백업을 만들어
+          운영자의 기기에 보관하고, 변경이 끝나 문제가 없으면 7일 안에 지웁니다. 이 백업은 복구 목적
+          외에는 열지 않습니다.
         </p>
 
         <h2>4. 제3자 제공</h2>
@@ -102,11 +102,6 @@
             <td>Supabase, Inc.</td>
             <td>데이터베이스와 익명 로그인 운영</td>
             <td>대한민국 (서울)</td>
-          </tr>
-          <tr>
-            <td>Oracle Corporation</td>
-            <td>암호화된 백업 보관</td>
-            <td>백업 설정 후 기재</td>
           </tr>
         </table>
         <p class="note">
@@ -138,7 +133,7 @@
         <h2>9. 안전성 확보 조치</h2>
         <p>
           모든 통신은 암호화(HTTPS)하고, 데이터베이스는 행 단위 보안과 서버 함수로만 접근하게
-          했으며, 식별자와 IP는 비밀 키로 해시해 저장합니다. 백업은 공개 키로 암호화합니다.
+          했으며, 식별자와 IP는 비밀 키로 해시해 저장합니다.
         </p>
 
         <h2>10. 개인정보 보호책임자</h2>
@@ -223,9 +218,9 @@
 
         <h2>3. Backups</h2>
         <p>
-          The database is backed up once a day, encrypted, and kept for 30 days. A deleted post can
-          therefore remain inside an encrypted backup for up to 30 days. Backups are opened only to
-          restore the Service.
+          There are no scheduled backups. Right before a change to the server's structure, the
+          Operator makes a temporary backup, keeps it on the Operator's own device, and deletes it
+          within 7 days once the change works. It is opened only to restore the Service.
         </p>
 
         <h2>4. Sharing</h2>
@@ -245,11 +240,6 @@
             <td>Supabase, Inc.</td>
             <td>Database and anonymous sign-in</td>
             <td>Republic of Korea (Seoul)</td>
-          </tr>
-          <tr>
-            <td>Oracle Corporation</td>
-            <td>Storage of encrypted backups</td>
-            <td>To be stated when backups start</td>
           </tr>
         </table>
 
@@ -278,8 +268,8 @@
         <h2>9. Security</h2>
         <p>
           All traffic is encrypted (HTTPS), the database is reachable only through row-level
-          security and server functions, identifiers and IP addresses are stored as keyed hashes,
-          and backups are encrypted with a public key.
+          security and server functions, and identifiers and IP addresses are stored as keyed
+          hashes.
         </p>
 
         <h2>10. Contact</h2>
